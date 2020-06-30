@@ -39,14 +39,18 @@ nav{
     background-color: #afafaf;
     margin-bottom: 60px;
 }
+.navbar {
+    width: 100%;
+}
 /*logo*/
 .object {
-    transform: translate(14%);
+    display: flex;
+    justify-content: start;
 }
 .logo{
     width: 10vh;
     height: 10vh;
-    margin-left: 2vw;
+    margin-left: 10vw;
     object-fit: cover;
 }
 /*logo end*/
@@ -60,7 +64,7 @@ ul li {
     list-style: none;
     display: flex;
     line-height: 4vh;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 li a {
     text-decoration: none;
@@ -86,8 +90,7 @@ p{
 .boxes {
     display: flex;
     justify-content: space-evenly;
-    margin:auto;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 .box {
     margin: 50px auto;
@@ -130,6 +133,9 @@ h2 {
     text-align: center;
     font-weight: bold;
     color: rgb(1, 71, 56);
+}
+.registration {
+    padding-top: 10vh;
 }
 input {
     position: relative;
@@ -191,9 +197,6 @@ footer {
          margin: 0 auto;
          margin-bottom: 5vh;
      }
-     .logo {
-         margin-left: 4vw;
-     }
     .menu-icon {
         position: absolute;
         top: 2rem;
@@ -205,7 +208,7 @@ footer {
         margin-bottom: 6vh;
     }
      footer {
-         width: 80%;
+         width: 100%;
          margin: 0 auto;
      }
 
@@ -220,21 +223,16 @@ footer {
         margin: 0 auto;
         margin-bottom: 5vh;
     }
-    .object {
-        transform: translateY(0%);
-    }
-    .logo {
-        margin-left: 5vw; 
-        width: 10vh;
-        height: 10vh;     
-    }
     p {
         width: 60%;
         margin: 0 auto;
         margin-bottom: 6vh;
     }
+    .boxes{
+        margin: 50px;
+    }
     footer {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
     /*form */
@@ -282,12 +280,7 @@ footer {
         margin-bottom: 6vh;
         position: relative;
     }
-    .object {
-        transform: translate(-25%,5%);
-    }
     .logo {
-        width: 9vh;
-        height: 9vh;
         object-fit: cover;
     }
     ul li{
@@ -330,13 +323,14 @@ footer {
         margin: 0 auto;
         margin-bottom: 8vh;
     }
+    
     .left,.right {
         width: 17vh;
         height: 18.2vh;
         background-color:#afafaf;
     }
     footer {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
     /* form */
@@ -380,9 +374,6 @@ footer {
     /*form end*/
 }
 @media(max-width:600px){
-    /* .sidebar {
-        width: 40px;
-    } */
     .container {
         width: 595px;
         margin: 0 auto;
@@ -391,10 +382,6 @@ footer {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 7vh;
-    }
-    .navbar {
-        justify-content:end;
-        display: flex;
     }
     .line {
         height: .1rem;
@@ -407,21 +394,16 @@ footer {
         transition: all .4s;
         margin-left: .4rem;
     }
-    .object {
-        transform: translate(5%,15%);
-    }
-    .logo {
-        width: 7vh;
-        height: 7vh;
-        object-fit: cover;
-    }
     p {
         text-align: center;
     }
-    .left,.right {
+    .left-box,.right-box {
         width: 18vh;
-        height: 19.5vh;
+        height: 18vh;
         background-color:#afafaf;
+    }
+    .xoxo {
+        font-size: 2.2rem;
     }
     /* form */
     label {
@@ -444,9 +426,7 @@ footer {
     .navbar {
         justify-content:end;
         display: flex;
-    }
-    .object {
-        transform: translate(2%,15%);
+        width: 100%;
     }
     .line {
         height: .1rem;
@@ -463,12 +443,7 @@ footer {
         width: 2rem;
         background-color: #fa1332f5;
     }
-    .object {
-        transform: translate(-22%,15%);
-    }
     .logo {
-        width: 7vh;
-        height: 7vh;
         object-fit: cover;
     }
     p {
@@ -478,26 +453,26 @@ footer {
         font-size: 1rem;
     }
     .boxes {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         margin-bottom: 5vh;
-
+        justify-content: space-around;
     }
-    .left,.right {
+    .left-box,.right-box {
         width: 15vh;
         height: 15vh;
-        line-height: 15vh;
         background-color:#afafaf;
-        margin-bottom: 5vh; 
+        margin-bottom: 0.5vh; 
     }
-    
+    .box {
+        margin:1.5vh auto
+    }
     footer {
         flex-direction: column;
         align-items: center;
         font-size: 0.5rem;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-        margin-left: 3rem;
     }
 }
 
