@@ -88,19 +88,7 @@ function formValidacija(e) {
    
     myForm.submit();
 
-     
- 
     }
-
-     
-
-    //
-  
-
-  // for( var k=0;k<line.length; k++){
-  //   line[k].style.background = "tomato";
-  // }
-  
 }
 }
   

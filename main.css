@@ -32,7 +32,7 @@
 
 /*navigation*/
 nav{
-    width: 100%;
+    width: 90%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -92,15 +92,15 @@ p{
 .box {
     margin: 50px auto;
     padding: 0;
-    width: 300px;
-    height: 300px;
+    width: 33vh;
+    height: 33vh;
     box-sizing: border-box;
     margin-bottom: 3rem;
 }
 .xoxo {
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: 11vh;
+    height: 11vh;
+    line-height: 11vh;
     float: left;
     background:rgb(1, 71, 56) ;
     border: 1px solid #eee;
@@ -132,6 +132,9 @@ h2 {
     color: rgb(1, 71, 56);
 }
 input {
+    position: relative;
+}
+.name,.email,.password {
     position: relative;
 }
 label {
@@ -184,7 +187,7 @@ footer {
         margin: 0 auto;
     }
      nav {
-         width: 80%;
+         width: 90%;
          margin: 0 auto;
          margin-bottom: 5vh;
      }
@@ -213,7 +216,7 @@ footer {
         margin: 0 auto;
     }
     nav {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 5vh;
     }
@@ -267,36 +270,18 @@ footer {
 }
 @media(max-width:768px){
     .sidebar {
-        width: 5rem;
-        display: flex;
-        justify-content: start;
+    display: none;
     }
     .container {
         width: 764px;
         margin: 0 auto;
     }
     nav {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 6vh;
         position: relative;
     }
-    #mySidenav {
-       overflow:hidden;
-       height:100%;
-       background:rgba(4, 88, 70, 0.089);
-    }
-    .sidenav {
-       display: flex;
-       flex-direction: column;
-       margin-top: 10rem;
-     }
-     .sidenav a {
-         color:rgb(9, 197, 156);
-         text-decoration: none;
-         list-style: none;
-         margin-bottom: 1rem;
-     }
     .object {
         transform: translate(-25%,5%);
     }
@@ -395,15 +380,15 @@ footer {
     /*form end*/
 }
 @media(max-width:600px){
-    .sidebar {
+    /* .sidebar {
         width: 40px;
-    }
+    } */
     .container {
         width: 595px;
         margin: 0 auto;
     }
     nav {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 7vh;
     }
@@ -449,11 +434,10 @@ footer {
     /*form end */
 }
 @media(max-width:360px){
-    .sidebar {
+    /* .sidebar {
         width: 40px;
         justify-content: start;
-    }
-    
+    } */
     .container {
         width: 345px;
         margin: 0 auto;
@@ -484,6 +468,9 @@ footer {
         width: 2rem;
         background-color: #fa1332f5;
     }
+    .object {
+        transform: translate(-22%,15%);
+    }
     .logo {
         width: 7vh;
         height: 7vh;
@@ -503,6 +490,7 @@ footer {
         background-color:#afafaf;
         margin-bottom: 5vh; 
     }
+    
     footer {
         flex-direction: column;
         align-items: center;
