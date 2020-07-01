@@ -43,6 +43,9 @@ for(var i=0; i<lines.length; i++){
   }
  }
 }
+function reload(){
+  window.location.reload();
+}
 /* XO end */
 
 /*  Form */
@@ -66,25 +69,25 @@ function formValidacija(e) {
   var error = "";
   if(username.value.length > 20) {
     username.style.border = "1px solid tomato";
-    errors.push(' Greška: Predugačak username! ');
+    errors.push(' Error: Username is to long! ');
   }
   if(password.value != "12345") {
     password.style.border = "1px solid tomato";
-    errors.push(' Greška: Password nije tačan! ');
+    errors.push(' Error: Password is not correct ');
   }
   if(email.value.indexOf('@gmail.com')== -1) {
     email.style.border = "1px solid tomato";
-    errors.push(' Greška: Email mora biti gmail! ');
+    errors.push(' Error: Email must be gmail! ');
   }
   for(var j=0; j < errors.length; j++)  {
-     /* moj kod */ 
+     /* my code */ 
   textError.innerHTML += errors[j];
-   /* moj kod */ 
+   /* my code */ 
 
   if (errors.length !=0){
-    //ima greške
+    //have error
   }else {
-    //sve ok
+    //it's ok
    
     myForm.submit();
 
