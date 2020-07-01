@@ -127,6 +127,7 @@ p{
  animation-name: refresh;
  animation-duration: 4s;
  color:rgb(199, 231, 241);
+ outline: none;
 }
 @keyframes refresh {
     from {background-color:  rgb(172, 162, 197);}
