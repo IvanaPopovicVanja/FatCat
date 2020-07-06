@@ -1,4 +1,49 @@
+/* welcome msg*/
+var questions = [
+  {
+    text : "You need something new?",
+    correctAnswer : true
+  },
+  {
+    text : "Did you need new design and code?",
+    correctAnswer : true
+  },
+  {
+    text : "Do you need someone reliable?",
+    correctAnswer : true
+  }
+];
+var questionIndex = 0;
+var userScore = 0;
 
+function askQuestion(){
+  var userAnswer = confirm(questions[questionIndex].text);
+  if(questions[questionIndex].correctAnswer===userAnswer){ 
+  userScore++;
+}
+questionIndex++;
+if(questionIndex !== questions.length){
+  askQuestion();
+}
+}
+
+askQuestion();
+
+alert("You are answered on " +userScore+ " of " +questions.length+  ". \nPlease, contact me! ");
+
+/* welcome msg end*/
+
+/* hamMenu */
+
+function hamMenu() {
+  var list = document.getElementById("menu");
+  if (list.style.display === "block"){
+    list.style.display = "none";
+  } else {
+    list.style.display = "block";
+  }
+}
+/*hamMenu end */
 /* XO */
 
    var box = document.querySelector('.box');
@@ -38,7 +83,7 @@ for(var i=0; i<lines.length; i++){
   var line = lines[i];
   if(line[0].innerHTML == line[2].innerHTML && line[0].innerHTML == line[1].innerHTML && line[0].innerHTML != ""){
     for( var k=0;k<line.length; k++){
-      line[k].style.background = "tomato";
+      line[k].style.background = "pink";
     }
   }
  }
@@ -94,6 +139,9 @@ function formValidacija(e) {
     }
 }
 }
-  
-
 /*  Form End */
+/* vežba */
+
+
+
+/* vežba end */

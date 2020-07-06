@@ -75,10 +75,14 @@ li a {
 li a:hover{
     color: #20fc32fd;
 }
+.fa.fa-bars{
+    display: none;
+}
 /* menu end */
 /*navigation end*/
 
 /*main*/
+
 h1 {
     text-align: center;
     margin-bottom: 40px;
@@ -114,7 +118,7 @@ p{
     height: 11vh;
     line-height: 11vh;
     float: left;
-    background:rgb(1, 71, 56) ;
+    background:rgb(6, 221, 175) ;
     border: 1px solid #eee;
     box-sizing: border-box;
     font-size: 44px;
@@ -132,22 +136,22 @@ p{
     margin: 0 auto;
     width: 10vh;
     height: 5vh;
-    border: 1px inset gray;
+    border: 1px inset rgb(167, 243, 227);
     border-radius: 2vw;
-    background-color: rgb(63, 248, 73);
+    background-color: rgb(6, 221, 175);
     animation-name: refresh;
     animation-duration: 4s;
-    color: rgb(21, 4, 175);
+    color: rgb(8, 2, 65);
     outline: none;
     text-transform: uppercase;
-    font-size: 0.6rem;
-    font-weight: 400;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-align: center;
     margin-top: 0.5vh;  
 }
 @keyframes refresh {
-    from {background-color:  rgb(63, 248, 73);}
-    to{background-color:  rgb(0, 160, 40);}
+    from {background-color:  rgb(234, 241, 238);}
+    to{background-color:  rgb(23, 247, 247);}
 }
 .left-box,.right-box {
     width: 28vh;
@@ -192,12 +196,12 @@ form{
 input {
     width: 35rem;
     height: 2rem;
-    border: 1 solid gray;
+    border: 1px solid gray;
     border-radius: .3rem;
     margin-bottom: 3rem;
 }
 .btn {
-margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 #errors {
     text-align: center;
@@ -320,7 +324,7 @@ footer {
     .logo {
         object-fit: cover;
     }
-    ul li{
+    .menu {
         display: none;
     }
     .menu-icon {
@@ -329,7 +333,29 @@ footer {
         top: 1rem;
         left: 23rem;
     }
-    .line {
+    /* navbar */
+    .navbar {
+        overflow:hidden;
+        position: relative;
+    }
+    .navbar a {
+        float: left;
+    }
+    .navbar a:hover {
+        background-color: rgb(6, 247, 18);
+    }
+    .fa.fa-bars{
+        font-weight: 600;
+        display: flex;
+        justify-content: end;
+        top: 3.4vh;
+        position: absolute;
+        right: 2vw;
+        width: 3vw;
+        height: 3vh;
+        z-index: 10;
+    }
+    /* .line {
         height: .1rem;
         width: 2rem;
         background-color: #222;
@@ -354,7 +380,8 @@ footer {
     .checkbox:checked ~ .navbar .line-3{
         transform: rotate(405deg) translate(-6px, -7px);
         width: 2rem;
-    }
+    } */
+    /* navbar end*/
     p{
         width: 60%;
         margin: 0 auto;
