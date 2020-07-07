@@ -44,6 +44,22 @@ function hamMenu() {
   }
 }
 /*hamMenu end */
+
+
+/* Slider */
+var img = document.querySelector('.slide');
+var counter = 1;
+
+var loop = setInterval(function() {
+  counter++;//2
+  if(counter === 4){
+    counter = 1;
+  }
+  img.setAttribute('src','img/art'+counter+'.jpg');
+}, 2000)
+
+
+/* Slider End */
 /* XO */
 
    var box = document.querySelector('.box');
@@ -112,7 +128,6 @@ setTimeout(function () {
 }, 4000)
 setTimeout(startLights,6000)
 }
-
 /* Traffic lights end */
 /*  Form */
 var username = document.querySelector('input[type="text"]');

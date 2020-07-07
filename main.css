@@ -87,6 +87,16 @@ h1 {
     text-align: center;
     margin-bottom: 40px;
 }
+.slider {
+    width: 600px;
+    height: 300px;
+    margin: 5rem auto;
+    box-shadow: 0 0 8px;
+}
+.slider > img {
+    width: 600px;
+    height: 300px;
+}
 h2 {
     grid-column: 2 / 3;
     grid-row: 1/2;
