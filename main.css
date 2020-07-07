@@ -163,6 +163,24 @@ p{
     background-color: rgba(2, 148, 153, 0.102);
     transform: rotate(45deg);
 }
+.tlights {
+    width: 10rem;
+    height: 30rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 8px;
+    border-radius: 6px;
+}
+.box-light{
+    padding-top: 0.1px;
+}
+
+.light {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin: 1rem auto;
+}
 /*main end*/
 
 /*form*/

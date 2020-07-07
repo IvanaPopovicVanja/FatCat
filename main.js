@@ -26,10 +26,10 @@ if(questionIndex !== questions.length){
   askQuestion();
 }
 }
+/*
+// askQuestion();
 
-askQuestion();
-
-alert("You are answered on " +userScore+ " of " +questions.length+  ". \nPlease, contact me! ");
+// alert("You are answered on " +userScore+ " of " +questions.length+  ". \nPlease, contact me! ");
 
 /* welcome msg end*/
 
@@ -92,7 +92,28 @@ function reload(){
   window.location.reload();
 }
 /* XO end */
+/* Traffic lights */
+var trafficLights = document.querySelectorAll('.light');
+startLights();
 
+function startLights(){
+  trafficLights[0].style.background = "red";
+  trafficLights[1].style.background = "transparent";
+  trafficLights[2].style.background = "transparent";
+
+setTimeout(function () {
+  trafficLights[1].style.background = "yellow";
+}, 2000)
+
+setTimeout(function () {
+  trafficLights[2].style.background = "green";
+  trafficLights[0].style.background = "transparent";
+  trafficLights[1].style.background = "transparent";
+}, 4000)
+setTimeout(startLights,6000)
+}
+
+/* Traffic lights end */
 /*  Form */
 var username = document.querySelector('input[type="text"]');
 var password = document.querySelector('input[type="password"]');
@@ -140,8 +161,4 @@ function formValidacija(e) {
 }
 }
 /*  Form End */
-/* vežba */
 
-
-
-/* vežba end */
